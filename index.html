@@ -1,0 +1,3302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NShop</title>
+
+    <!-- Link Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__cont">
+                    <div class="header--brand">
+                        <a href="#">
+                            <img src="./img/logo.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header--list">
+                        <button class="_button">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" data-v-a140749a="" class="">
+                                <title data-v-a140749a="">uniF4E0</title>
+                                <path
+                                    d="M3 0q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM15 0q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM27 6q-0.625 0-1.172-0.234t-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234 1.172 0.234 0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234zM3 12q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM15 12q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM27 12q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM3 24q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM15 24q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234zM27 24q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172 0.234-1.172 0.641-0.953 0.953-0.641 1.172-0.234z"
+                                    data-v-a140749a=""></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <form class="header--search" action="">
+                        <div class="search-control">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input id="search" type="text" placeholder="Tìm kiếm sản phẩm trên NSHOP..." />
+                        </div>
+                        <div class="result">
+                            <p>Nhập tên hoặc từ khóa sản phẩm bạn cần tìm.</p>
+                        </div>
+                    </form>
+
+                    <div class="header--end">
+                        <a href="">
+                            <span class="header--icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 32 32" data-v-a140749a="" class="">
+                                    <title data-v-a140749a="">uniE7BF</title>
+                                    <path
+                                        d="M25 24q0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172-0.234 1.172-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172q0-0.484 0.172-1h-8.344q0.172 0.516 0.172 1 0 0.625-0.234 1.172t-0.641 0.953-0.953 0.641-1.172 0.234-1.172-0.234-0.953-0.641-0.641-0.953-0.234-1.172q0-0.859 0.461-1.594t1.242-1.109l-6.75-20.297h-2.953v-2h4.391l1.328 4h26.281l-4.656 14h-16.953l1.328 4h13.281zM6.391 8l3.328 10h16.172l3.328-10h-22.828zM12 27q0-0.406-0.297-0.703t-0.703-0.297-0.703 0.297-0.297 0.703 0.297 0.703 0.703 0.297 0.703-0.297 0.297-0.703zM25 28q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297-0.703 0.297-0.297 0.703 0.297 0.703 0.703 0.297z"
+                                        data-v-a140749a=""></path>
+                                </svg>
+                            </span>
+                            <span>Giỏ hàng</span>
+                        </a>
+
+                        <a href="">
+                            <span class="header--icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 32 32" data-v-a140749a="" class="">
+                                    <title data-v-a140749a="">uniE77B</title>
+                                    <path
+                                        d="M20.781 18.797q2.125 0.734 3.836 2.055t2.906 3.055 1.836 3.797 0.641 4.297h-2q0-2.563-0.914-4.758t-2.523-3.805-3.805-2.523-4.758-0.914q-1.672 0-3.219 0.422t-2.883 1.195-2.422 1.859-1.859 2.422-1.195 2.883-0.422 3.219h-2q0-2.25 0.656-4.305t1.859-3.773 2.914-3.031 3.82-2.078q-1.219-0.656-2.188-1.594t-1.648-2.086-1.047-2.453-0.367-2.68q0-2.078 0.781-3.898t2.141-3.18 3.18-2.141 3.898-0.781 3.898 0.781 3.18 2.141 2.141 3.18 0.781 3.898q0 1.375-0.367 2.672t-1.047 2.438-1.641 2.086-2.164 1.602zM8 10q0 1.656 0.633 3.109t1.719 2.539 2.539 1.719 3.109 0.633 3.109-0.633 2.539-1.719 1.719-2.539 0.633-3.109-0.633-3.109-1.719-2.539-2.539-1.719-3.109-0.633-3.109 0.633-2.539 1.719-1.719 2.539-0.633 3.109z"
+                                        data-v-a140749a=""></path>
+                                </svg>
+                            </span>
+                            <span>Tài khoản</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom--inner">
+                    <ul class="header-bt__tabs">
+                        <li>
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Hệ thống cửa hàng</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-bt__info">
+                        <li>
+                            <a href="mailto:info@nshopvn.com">
+                                <span class="icon fa fa-envelope-o" aria-hidden="true"></span>
+                                <span>info@nshopvn.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:0902 643 978">
+                                <span class="icon fa fa-phone" aria-hidden="true"></span>
+                                <span>Tân Phú: 0902 643 978</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:093 27 23 186">
+                                <span class="icon fa fa-phone" aria-hidden="true"></span>
+                                <span>Quận 9: 093 27 23 186</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <button id="btn-contact">
+                                <span>Liên hệ</span>
+                                <span class="icon fa fa-angle-down" aria-hidden="true"></span>
+                            </button>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <h4>Bán hàng</h4>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Quận 9: 093 27 23 186</span>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Quận 9: 093 27 23 186</span>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Tân Phú: 0904 83 35 36</span>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Tân Phú: 0904 83 35 36</span>
+                                </li>
+                                <li>
+                                    <h4>Kỹ thuật</h4>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Quận 9: 093 27 23 186</span>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-user-o" aria-hidden="true"></span>
+                                    <span class="drop-item--tel">Tân Phú: 0904 83 35 36</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- BEGIN PAGE -->
+    <div class="container">
+        <div class="page">
+            <div class="sidebar">
+                <div class="siderbar--inner">
+                    <div class="item">
+                        <h3 class="title">Danh mục sản phẩm</h3>
+                        <ul class="categories">
+                            <li>
+                                <div class="cat">
+                                    <a href="">Arduino</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Arduino Shield</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Board Arduino</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Board Arduino wifi</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện Arduino</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Cảm biến</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến âm thanh</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến ánh sáng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến cân nặng (Loadcell)</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến chuyển động</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến độ đục của nước</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến dò line</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến độ pH</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến dòng điện</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến gió</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến hồng ngoại</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến khoảng cách vật cản</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến siêu âm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến vật cản hồng ngoại</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến vật cản Rada</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến lực, áp suất</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến lưu lượng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến màu sắc</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến mực chất lỏng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến nhiệt độ, độ ẩm, mưa</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến độ ẩm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến mưa</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến nhiệt độ</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến nhiệt độ, độ ẩm</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến nồng độ cồn</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến rung</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến sinh học</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến nhịp tim</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến vân tay</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cảm biến từ trường, kim loại</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến tiệm cận</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến từ</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Encoder</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Gia tốc, Góc nghiêng, La bàn</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Không khí, Gas, Phát hiện lửa</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến khí Gas</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến không khí</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cảm biến phát hiện lửa</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện cảm biến</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Combo khuyến mãi</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Đèn LED, Điều khiển LED</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đèn báo</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đèn báo AC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đèn báo DC</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đèn báo có còi</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đèn báo có còi AC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đèn báo có còi DC</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đèn led dây</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Led đom đóm</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Led RGB</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Led siêu sáng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Led thông thường khác</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Led UV</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Mạch điều khiển LED</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện nghành led</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Điện dân dụng và Công nghiệp</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Cầu chì</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">CB tép ( MCB )</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Connector</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Contactor</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Raylay nhiệt</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Đồ hồ vạn năng</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đồng hồ vạn năng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện đồng hồ vạn năng</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Máy in 3D, Công nghệ</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Laser, công nghệ</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Máy in 3D, CNC</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Modal, Mạch điện</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Âm thanh, Khuyết đại</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Không tích hợp Buetooth</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Tích hợp Buetooth</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Bàn phím, điều khiển, Joystick</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bàn phím</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bàn phím cảm ứng</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bàn phím cứng</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bàn phím mền</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Điều khiển</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Joystick</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Biến áp cao tần</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Điều khiển động cơ</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Điều khiển động cơ bước</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Điều khiển động cơ chổi than - Điều tốc xe điện</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Điều khiển động cơ DC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Điều khiển động cơ Servo</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Dimmer, Tạo xung</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dimmer AC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dimmer DC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch tạo xung</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đồng hồ đo dòng điện, điện áp, công suất</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đồng hồ đo công suất DC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đồng hồ đo công suất, mức năng lượng AC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đồng hồ đo dòng điện, điện áp AC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đồng hồ đo dòng, đo áp DC</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đồng hồ đo nhiệt</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Đóng ngắt, Relay</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch MOSFET</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module kích hoạt relay</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Relay đóng ngắt tạo trễ</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Relay Opto cách ly</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Relay Rắn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Relay trung gian</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Giao tiếp, Chuyển đổi</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch chuyển USB</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch giao tiếp, Chuyển đổi</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Kit phát triển, Mạch nạp</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Kích phát triển</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch nạp</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Màn hình LCD</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình LCD cho máy CNC, in 3D</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình LCD Graphics</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình LCD HMI</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình LCD text</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình Oled</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Màn hình TFT - Cảm ứng</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Module chức năng</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ khống chế nhiệt độ và độ ẩm</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bộ khống chế độ ẩm</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bộ khống chế nhiệt độ</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bộ khống chế nhiệt độ và độ ẩm</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ mã khóa thẻ từ</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đầu phun sương</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch nháy đèn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch nháy theo nhạc</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch test điện tử</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module camera</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module chức năng</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module thời gian thực</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Timer hẹn giờ</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Module kích điện</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Nguồn, Xung, Tăng giảm áp, Sạc, Pin</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ nguồn đa năng</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch giảm áp (hạ áp)</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch sạc pin</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch sạc và bảo vệ pin</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch tăng áp</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module nguồn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module ổn định điện áp</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nguồn adapter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nguồn tổ ong</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Pin</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">RF, GSM, GPS, Bluetooth, Wifi, RFID</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">GSM và GPS</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Anten</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Mạch định vị</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Module Sim</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Module Bluetooth</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Remote điều khiển từ xa</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Remote 315Mhz</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Remote 433Mhz</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Remote học lệnh 315Mhz</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Remote học lệnh 433Mhz</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">RF</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bộ điều khiển RF</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Mạch thu phát RF</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Mạch thu sóng RF</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">RFID</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Mạch RFID</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Thẻ RFID</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Wifi, Ethernet</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Bộ điều khiển wifi</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Module Ethernet</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Module wifi ESP32</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Module wifi ESP8266</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Thời gian, hiển thị</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Led 7 đoạn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Led ma trận</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch đèn giao thông</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch hiển thị điện áp</a>
+                                                </div>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch hiển thị Neopixel</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mạch hiển thị thời gian, nhiệt độ</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Phụ tùng, Dụng cụ</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Dụng cụ, Linh kiện cơ khí</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bản lề</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ bánh răng</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Con trượt</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đá mài</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đầu kẹp mũi khoan</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dụng cụ</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Khớp nối</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Khối nối bánh xe</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Khối nối trục</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Khớp truyền động Cardan</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Khớp truyền động mặt bích</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Linh kiện cơ khí khác</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Lò xo</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Máy hút, Ống khói</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Puly</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Trục</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Trục trơn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Vitme T8</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Vòng bi</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Vòng chặn trục</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Vòng đai</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Dụng cụ, Phụ kiện điện tử</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Công tắc</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Công tắc các loại</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Công tắc chuyển chế độ</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Công tắc dừng khẩn cấp</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Công tắc hành trình</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đầu USB</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dây bus</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dây cắm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dây cáp</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dây co nhiệt (Gen co nhiệt)</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dây điện</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Để IC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Đế ra chân</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Domino và Connector</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dụng cụ thực hành</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Kìm</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Kính lúp</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Nhíp và Kẹp</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Súng bắn keo</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Tua vít</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Hộp đựng linh kiện</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Hộp pin</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Jack cắm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Linh kiện điện tử khác</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Loa</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nhôm tản nhiệt</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nút nguồn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nút nhấn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Rào đực và Rào cái</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Test Board</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Trụ đồng</a>
+                                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                                </div>
+                                                <ul class="children">
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Trụ đồng cái cái</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cat">
+                                                            <a href="">Trực đồng đực cái</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Vỏ hộp bảo vệ mạch</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Máy hàn, khò</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ máy hàn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bộ máy khò</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Mỏ hàn</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện làm mạch</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Board đồng</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dụng cụ hút chiếc</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Dụng cụ làm mạch</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Phụ kiện hàn</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Thiết hàn</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cat">
+                                    <a href="">Robot, Phụ kiện DIY</a>
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </div>
+                                <ul class="children">
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Bánh xe</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bánh xe đa hướng</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bánh xe thường</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bánh xích xe tăng</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Bộ đếm sản phẩm</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Con quay Spinner</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Động cơ</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ Bơm, rung</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ Bước</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ Coreless</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ DC</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ DC giảm tốc</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ không chổi khan</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Động cơ RC servo</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Gá động cơ</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Mô hình Robot</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Nam châm điện, van điện từ, khóa chốt</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Khóa Chốt Điện tử</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nam châm điện</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Van Điện Từ</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ Kiện DIY</a>
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Bánh mắt trâu</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Cánh quạt, Chân vịt</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Còi báo</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Keo tản nhiệt, Bảo vệ</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Nam châm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Ống dây máy bơm</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Quạt tản nhiệt</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Sò nóng lạnh</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Tản nhiệt nước</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cat">
+                                                    <a href="">Van nước một chiều</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Phụ kiện</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cat">
+                                            <a href="">Xi Lanh Điện</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3 class="title">Kết nối với shop</h3>
+                        <ul class="connecting">
+                            <li>
+                                <a href="https://www.facebook.com/1781446968819273/">
+                                    <span class="icon fa fa-facebook-square" aria-hidden="true"></span>
+                                    <span>Linh kiện điện tử NShop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/groups/543064839510264/">
+                                    <span class="icon fa fa-users" aria-hidden="true"> </span>
+                                    <span>Hội đam mê cơ điện tử</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvlCbgZr1NoSazbmxspIZEw">
+                                    <span class="icon icon-youtube fa fa-youtube-play" aria-hidden="true"></span>
+                                    <span>Kênh Youtube của Nshop</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3 class="title">Khác</h3>
+                        <ul class="other-links">
+                            <li>
+                                <a href="">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="">Kiểm tra đơn hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Tuyển dụng</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- BEGIN MAIN -->
+            <main class="main">
+                <!-- Banner -->
+                <section class="block banner">
+                    <!-- Swiper -->
+                    <div class="swiper-container swiper-banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/sale-tet-2021.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/vong-quay-tet-2021.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/0720-banner-free-toanquoc.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/0720-banner-sieu-toc.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/0720-banner-4h.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/bao-hanh.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="./img/tich-diem-hoan-tien-2020.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next banner-button-next"></div>
+                        <div class="swiper-button-prev banner-button-prev"></div>
+                    </div>
+                </section>
+
+                <!-- New products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Sản phẩm mới </h3>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/timer-hen-gio-ky-thuat-so-kg316t-ii-220v-25-a-h0tb-3-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Timer hẹn giờ kỹ thuật số KG316T-II 220V - 25 A</p>
+                                        <span>160.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/relay-ran-ssr-100-dd-fotek-made-in-taiwan-hw3o-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Relay rắn SSR Fotek (Made in Taiwan) SSR - 100 DD</p>
+                                        <span>146.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/module-tao-xung-pwm-sg3525-co-the-dieu-chinh-tan-so-do-rong-xung-9e7v-2-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Module tạo xung PWM SG3525, có thể điều chỉnh tần số, độ rộng xung</p>
+                                        <span>30.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-4-banh-xe-mecanum-60mm-hujs-3-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ 4 bánh xe Mecanum đường kính 60mm</p>
+                                        <span>300.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-khong-che-nhiet-do-400-do-rex-c100-output-relay-10a-o1dy-3-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ khống chế nhiệt độ 400 độ REX-C100 output Relay 10A</p>
+                                        <span>310.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-tao-tre-dong-ngat-relay-220vac-kich-hoat-bang-remote-iu6m-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch tạo trễ đóng ngắt relay 220VAC kích hoạt bằng remote</p>
+                                        <span>300.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-vang-7wvl-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu vàng</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/coi-buzz-chu-dong-5v-rvvq-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Còi Buzz chủ động 5V</p>
+                                        <span>3.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/vo-hop-sac-du-phong-8-cell-18650-ho-tro-sac-nhanh-qc3-0-4h2a-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Vỏ hộp sạc dự phòng 8 cell 18650 hỗ trợ sạc nhanh QC3.0</p>
+                                        <span>198.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-dieu-khien-led-rgb-nhay-theo-nhac-12-24vdc-6ro5-2-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ điều khiển LED RGB nháy theo nhạc 12-24VDC</p>
+                                        <span>400.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Sản phẩm nổi bật products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Sản phẩm nổi bật </h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-lam-xe-3-banh-bluetooth-arduino-7pxt-1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự làm xe 3 bánh bluetooth Arduino</p>
+                                        <span>345.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-nguon-da-nang-v1-4a2f-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế nguồn đa năng v1</p>
+                                        <span>205.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-lam-xe-3-banh-tranh-vat-can-arduino-jpxl-1-300x300.jpg"
+                                            alt="">
+                                        <span class="outofstock">Hết hàng</span>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự làm xe 3 bánh tránh vật cản Arduino</p>
+                                        <span>325.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-khoa-van-tay-co-nguon-du-phong-h6oh-1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label is-fast">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping-fast.png" alt="">
+                                            </span>
+                                            <span class="text">FREE siêu tốc</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế khóa vân tay có nguồn dự phòng</p>
+                                        <span>1.269.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-khoa-cua-remote-co-nguon-du-phong-ts2n-1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế khóa cửa remote có nguồn dự phòng</p>
+                                        <span>628.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-xe-da-huong-arduino-dieu-khien-bluetooth-ih9p-1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo xe đa hướng Arduino - Điều khiển bluetooth</p>
+                                        <span>750.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-loa-bluetooth-nhay-theo-nhac-v1-8tn6-2-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế loa bluetooth nháy theo nhạc V1</p>
+                                        <span>585.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-may-rot-ruou-tu-dong-v1-19vd-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế máy rót rượu tự động V1</p>
+                                        <span>250.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-tu-che-may-rot-ruou-tu-dong-v2-wwxa-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự chế máy rót rượu tự động V2</p>
+                                        <span>298.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/may-hien-song-pc-oscilloscope-hantek-6022be-hxce-0-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label is-fast">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping-fast.png" alt="">
+                                            </span>
+                                            <span class="text">FREE siêu tốc</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Máy hiện sóng PC Oscilloscope Hantek 6022BE</p>
+                                        <span>345.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Arduino products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Arduino</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-stm8s103f3p6-ntt3-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch STM8S103F3P6</p>
+                                        <span>28.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/arduino-promini-lgt328p-ssop20-55XW-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Arduino Promini LGT328P SSOP20</p>
+                                        <span>25.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/arduino-nano-3-0-lgt8f328p-TZB3-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Arduino Nano 3.0 LGT8F328P</p>
+                                        <span>44.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/attiny85-cong-micro-usb-TPMO-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>ATTINY85 cổng micro usb</p>
+                                        <span>50.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/motor-shield-l298p-70O4-s3-300x300.jpg" alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Motor Shield L298P</p>
+                                        <span>120.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/arduino-wifi-wemos-d1-r32-esp32-ble-9PCV-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Arduino Wifi WeMos D1 R32 ESP32 BLE</p>
+                                        <span>200.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/de-ra-chan-arduino-nano-v3-6551-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đế Ra Chân Arduino Nano v3</p>
+                                        <span>25.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/day-cap-mini-usb-cap-nano-85GZ-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Dây cáp mini Usb, cáp nano (Cáp Usb to Mini Usb)</p>
+                                        <span>8.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-arduino-uno-wifi-r3-atmega328p-esp8266-XWTU-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch Arduino UNO + WiFi R3 ATmega328P + ESP8266</p>
+                                        <span>200.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/arduino-esp8266-wifi-shield-CBSW-2020-300x300.jpg" alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Arduino ESP8266 Wifi Shield</p>
+                                        <span>120.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Cảm biến products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Cảm biến</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/module-encoder-v2-vgcb-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo tự làm xe 3 bánh bluetooth Arduino</p>
+                                        <span>345.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-dong-dien-dc-ac-hall-35a-wcs1800-pggw-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến dòng điện DC/AC Hall 35A WCS1800</p>
+                                        <span>230.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-muc-chat-long-quang-dien-w002-yn1f-4-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến mực chất lỏng quang điện W002</p>
+                                        <span>140.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-la-ban-gy-87-10-dof-mpu6050-bmp180-hmc5883l-b4nf-6-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến la bàn GY-87 10 DOF MPU6050 + BMP180 + HMC5883L</p>
+                                        <span>228.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-nhiet-do-va-do-am-sht30-hsj632-3vxl-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến nhiệt độ và độ ẩm SHT30 - HSJ632</p>
+                                        <span>298.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-nhiet-do-va-do-am-sht30-ht533-a5i0-1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến nhiệt độ và độ ẩm SHT30 - HT533</p>
+                                        <span>230.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-nhiet-do-va-do-am-sht30-ht76-gzpc-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến nhiệt độ và độ ẩm SHT30 - HT76</p>
+                                        <span>214.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-nhiet-do-va-do-am-sht30-sj57-uzlh-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến nhiệt độ và độ ẩm SHT30 - SJ57</p>
+                                        <span>275.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/de-cam-bien-than-nhiet-chuyen-dong-pir-hc-sr501-0vqp-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đế cảm biến thân nhiệt chuyển động PIR HC-SR501</p>
+                                        <span>5.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cam-bien-luu-luong-nuoc-may-coffe-sea-dws-mh-01-tich-hop-dau-do-tds-7eyr-0-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cảm biến lưu lượng nước Máy coffe Sea DWS-MH-01 đầu dò TDS</p>
+                                        <span>125.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Đồng hồ vạn năng products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Đồng hồ vạn năng</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-ampe-kim-tu-dong-winapex-8202-kp9j-S1-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ ampe kìm tự động WinAPEX 8202</p>
+                                        <span>730.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-ampe-kim-tu-dong-winapex-8201-XBGV-2020-0-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ ampe kìm tự động WinAPEX 8201</p>
+                                        <span>610.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-dien-tu-tu-dong-yiyoubao-et8133-QNZU-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ điện tử tự động YIYOUBAO ET8133</p>
+                                        <span>300.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-dien-tu-winapex-et8103-auto-O75E-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ điện tử WinAPEX ET8103 Auto</p>
+                                        <span>529.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/Dong-ho-dien-tu-WinAPEX-ET8102-L7NA-3-300x300.jpg" alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREE HCM</span>
+                                        </div>
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ điện tử WinAPEX ET8102</p>
+                                        <span>730.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-dien-tu-victor-vc830l-LYL8-2020-300x300.jpg" alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng hồ điện tử VICTOR VC830L</p>
+                                        <span>195.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-ho-do-dien-dt-9205a-J5SQ-2020-300x300.jpg" alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đồng Hồ Đo Điện DT-9205A</p>
+                                        <span>160.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/que-do-dong-ho-1000v-20a-TJSE-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Que đo đồng hồ 1000V 20A</p>
+                                        <span>26.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Máy in 3D, Công nghệ products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Máy in 3D, Công nghệ</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-laser-9mm-cham-nshopvn-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu Laser 9mm chấm</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/con-lan-nhom-dinh-hinh-truc-5mm-OFHK-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Con lăn nhôm định hình trục 5mm</p>
+                                        <span>25.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-dieu-khien-may-in-3d-ramps-1-6-7JXU-2020-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch điều khiển máy in 3D RAMPS 1.6</p>
+                                        <span>130.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-dieu-khien-may-in-3d-mks-gen-l-v1-0-ZGGL-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREE HCM</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch điều khiển máy in 3D MKS Gen L V1.0</p>
+                                        <span>450.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/may-do-toc-do-dong-co-laser-khong-tiep-xuc-gm8905-BZES-2020-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREE HCM</span>
+                                        </div>
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Máy đo tốc độ động cơ Laser không tiếp xúc GM8905</p>
+                                        <span>498.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-gia-do-va-quat-tan-nhiet-dau-dun-e3d-v6-IJZV-2020-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ giá đỡ và quạt tản nhiệt đầu đùn E3D V6</p>
+                                        <span>35.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/laser-5mw-do-tia-cross-M8SN-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Laser 5mW Đỏ tia Cross</p>
+                                        <span>40.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/cap-thau-kinh-vat-kinh-VN02-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Cặp Thấu kính - Vật kính</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/banh-rang-dun-nhua-40-rang-08XF-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bánh Răng Đồng MK8 40 Răng Lỗ Trục 5mm</p>
+                                        <span>10.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-laser-9mm-tia-1-vach-thang-TZ73-2020-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu Laser 9mm tia 1 vạch thẳng</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Module, Mạch điện products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Module, Mạch điện</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/timer-hen-gio-ky-thuat-so-kg316t-ii-220v-25-a-h0tb-3-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Timer hẹn giờ kỹ thuật số KG316T-II 220V - 25 A</p>
+                                        <span>160.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/relay-ran-ssr-100-dd-fotek-made-in-taiwan-hw3o-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Relay rắn SSR Fotek (Made in Taiwan) SSR - 100 DD</p>
+                                        <span>146.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/module-tao-xung-pwm-sg3525-co-the-dieu-chinh-tan-so-do-rong-xung-9e7v-2-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Module tạo xung PWM SG3525, có thể điều chỉnh tần số, độ rộng xung</p>
+                                        <span>30.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-khong-che-nhiet-do-400-do-rex-c100-output-relay-10a-o1dy-3-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">FREESHIP</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ khống chế nhiệt độ 400 độ REX-C100 output Relay 10A</p>
+                                        <span>310.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-tao-tre-dong-ngat-relay-220vac-kich-hoat-bang-remote-iu6m-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch tạo trễ đóng ngắt relay 220VAC kích hoạt bằng remote</p>
+                                        <span>300.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/vo-hop-sac-du-phong-8-cell-18650-ho-tro-sac-nhanh-qc3-0-4h2a-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Vỏ hộp sạc dự phòng 8 cell 18650 hỗ trợ sạc nhanh QC3.0</p>
+                                        <span>198.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/pin-cuc-ao-cr2016-3volt-50y0-3-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Pin cúc áo CR2016 3Volt</p>
+                                        <span>4.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/pin-alkaline-12v-27a-c8e2-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Pin Alkaline 12V 27A</p>
+                                        <span>10.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/pin-alkaline-12v-23a-1hfo-0-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Pin Alkaline 12V 23A</p>
+                                        <span>10.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/mach-hien-thi-muc-nang-luong-pin-da-nang-mau-xanh-duong-9390-1-300x300.jpg"
+                                            alt="">
+                                        <div class="product-promo">
+                                            <p class="guarantee icon">
+                                                <img src="./img/icons8-guarantee-48.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Mạch hiển thị mức năng lượng pin đa năng màu xanh dương</p>
+                                        <span>120.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Phụ kiện, Dụng cụ products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Phụ kiện, Dụng cụ</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dung-cu-mo-xich-xe-tang-qqdm-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Dụng cụ mở xích xe tăng</p>
+                                        <span>6.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/khop-noi-banh-lai-banh-chu-dong-xe-tang-truc-4mm-r49q-3-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Khớp nối bánh lái, bánh chủ động xe tăng trục 4mm</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/de-ra-chan-esp-01-va-esp-01s-nn1o-4-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đế ra chân ESP-01 và ESP-01S</p>
+                                        <span>10.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bang-kep-mach-dien-tu-best-120-x-80mm-zvrq-4-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bảng kẹp mạch điện tử BEST 120 x 80mm</p>
+                                        <span>45.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/de-chuyen-doi-avrisp-usbasp-stk500-10-pin-sang-6-pin-twy8-5-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đế chuyển đổi AVRISP - USBasp - STK500 10 PIN sang 6 PIN</p>
+                                        <span>10.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-mo-han-jy-936-900m-t-0-8d-z0xx-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu mỏ hàn JY 936 900M-T-0.8D</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-mo-han-jy-936-900m-t-3c-nxq9-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu mỏ hàn JY 936 900M-T-3C</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-mo-han-jy-936-900m-t-2c-sj6q-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu mỏ hàn JY 936 900M-T-2C</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-mo-han-jy-936-900m-t-b-64eg-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu mỏ hàn JY 936 900M-T-B</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dau-mo-han-jy-936-900m-t-2-4d-txh8-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Đầu mỏ hàn JY 936 900M-T-2.4D</p>
+                                        <span>20.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Đèn LED, Điều khiển LED products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Đèn LED, Điều khiển LED</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-dieu-khien-led-rgb-nhay-theo-nhac-12-24vdc-6ro5-2-300x300.jpg"
+                                            alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ điều khiển LED RGB nháy theo nhạc 12-24VDC</p>
+                                        <span>400.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-vang-7wvl-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu vàng</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-trang-am-0ey7-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu trắng</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-trang-bm7h-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu trắng ấm</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-cam-1apy-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu cam</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-hong-xw5t-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu hồng</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-do-m3oy-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu đỏ</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-tim-xnsd-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu tím</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-xanh-duong-7qgk-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu xanh dương</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/led-neon-6x12mm-cuon-5m-mau-xanh-la-4tw8-1-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Led NEON 6x12mm cuộn 5m màu xanh lá</p>
+                                        <span>150.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Robot, Phụ kiện DIY products -->
+                <section class="block block-products">
+                    <div class="block-header">
+                        <h3 class="title">Robot, Điều khiển DIY</h3>
+                        <a href="" class="view-more">Xem thêm (99+)</a>
+                    </div>
+                    <div class="product-list">
+                        <ul class="products">
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-4-banh-xe-mecanum-60mm-hujs-3-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ 4 bánh xe Mecanum đường kính 60mm</p>
+                                        <span>300.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/coi-buzz-chu-dong-5v-rvvq-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Còi Buzz chủ động 5V</p>
+                                        <span>3.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-banh-xich-xe-tang-banh-kim-loai-719r-1-300x300.jpg" alt="">
+                                        <div class="freeshiping-label">
+                                            <span class="icon">
+                                                <img src="./img/free-shipping.png" alt="">
+                                            </span>
+                                            <span class="text">HCM FREE</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ bánh xích xe tăng bánh kim loại</p>
+                                        <span>367.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/combo-bo-banh-xich-xe-tang-kem-dong-co-1-ben-4ul0-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Combo bộ bánh xích xe tăng kèm động cơ (1 bên)</p>
+                                        <span>220.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/bo-banh-xich-xe-tang-nhua-8f5n-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bộ bánh xích xe tăng nhựa</p>
+                                        <span>185.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/banh-lai-banh-chu-dong-xe-tang-nhua-lmzv-2-300x300.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bánh lái, bánh chủ động xe tăng nhựa</p>
+                                        <span>25.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/banh-lai-banh-chu-dong-xe-tang-kim-loai-nltc-2-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Bánh lái, bánh chủ động xe tăng kim loại</p>
+                                        <span>105.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-co-giam-toc-300-truc-doi-chay-pin-nang-luong-mat-troi-10rpm-vtv5-3-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Động cơ giảm tốc 300 trục đôi chạy pin năng lượng mặt trời 10rpm</p>
+                                        <span>28.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-co-giam-toc-310-chay-pin-nang-luong-mat-troi-10rpm-vtv4-4-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Động cơ giảm tốc 310 chạy pin năng lượng mặt trời 10rpm</p>
+                                        <span>26.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="">
+                                    <div class="product-img">
+                                        <img src="./img/dong-co-giam-toc-310-chay-pin-nang-luong-mat-troi-400rpm-vtv3-1-300x300.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p>Động cơ giảm tốc 310 chạy pin năng lượng mặt trời 400rpm</p>
+                                        <span>32.000₫</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+            </main>
+            <!-- END MAIN -->
+
+        </div>
+    </div>
+    <!-- END  PAGE -->
+
+    <!-- BEGIN FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <ul>
+                        <li>
+                            <a href="">Bảo hành</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">Đổi trả</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">Bảo mật</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">Điều khoản</a>
+                        </li>
+                    </ul>
+                    <p>Hộ kinh doanh Linh kiện điện tử Nshop / GPĐKKD số: 41X8035261 do UBND Quận Tân Phú cấp ngày
+                        08/05/2019</p>
+                    <p><strong>Điện tử NShop Tân Phú</strong> : 1 Bùi Xuân Phái, Tây Thạnh, Tân Phú, TP. HCM – 📞 0902
+                        64 39 78</p>
+                    <p><strong>Điện tử NShop Quận 9</strong>: 7 Trần Hưng Đạo, Hiệp Phú, Quận 9, TP. HCM – 📞 093 27 23
+                        186</p>
+                    <p><strong>NSHOPVN.COM © 2019 - 2020</strong></p>
+                </div>
+                <div class="footer-right">
+                    <a href="">
+                        <img src="./img/_dmca_premi_badge_4.png" alt="">
+                    </a>
+                    <a href="">
+                        <img class="dathongbao-img" src="./img/dathongbao.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Scripts JS -->
+    <script src="./js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-banner', {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.banner-button-next',
+                prevEl: '.banner-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
