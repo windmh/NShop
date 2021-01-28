@@ -6,13 +6,13 @@ const contact2 = document.querySelectorAll("#btn-contact span");
 const dropdown = document.querySelector(".dropdown-content");
 const mobibtn = document.querySelector("._button");
 const mobile = document.querySelector(".menu-mobile");
-
+const filter1 = document.querySelector(".dropdown-filter");
+const filter1_1 = document.querySelector(".filter-trigger");
+const filter1_content = document.querySelector(".dropdown-filter ul");
+const see_store = document.querySelector(".product-stock-status a");
+const see_store_content = document.querySelector(".product-status-expanding");
 
 window.addEventListener("click", function (event) {
-  // if (event.target !== mobile && mobile.classList.contains("active") === true) {
-  //   mobile.classList.toggle("active");
-  // }
-
   if (event.target !== search && result.classList.contains("active") === true) {
     result.classList.toggle("active");
   }
@@ -26,7 +26,6 @@ window.addEventListener("click", function (event) {
     dropdown.classList.toggle("active");
   }
 });
-
 
 search.addEventListener("click", function () {
   result.classList.toggle("active");
@@ -45,4 +44,12 @@ cat.forEach((ele, index) => {
 
 mobibtn.addEventListener("click", function () {
   mobile.classList.toggle("active");
+});
+
+// filter1.addEventListener("click", function () {
+//   filter1_content.classList.toggle("active");
+// });
+
+see_store.addEventListener("click", function () {
+  see_store_content.classList.toggle("active");
 });
